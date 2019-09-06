@@ -17,8 +17,8 @@ library(tidyverse)
 
 # Question 1
 **a**: "<-" operator is the one I would use for assignment  
-**b**: When "=" and "<-" are used in creating an argument for a function, variable created by "<-" will be in the user's workspace while the one created by "==" will not.  
-**c**: Variable names must not start with special characters or numbers. Reserved words cannot be used as variable names.  
+**b**: When "=" and "<-" are used in creating an argument for a function, variable created by "<-" will be in the user's workspace while the one created by "=" will not.  
+**c**: Variable names must not start with special characters or numbers. Reserved (key) words cannot be used as variable names.  
 **d**: Default numeric data type is _double_. 200 is interpreted as a __double__. 
 ```{r, example for 1d}
 typeof(200)
@@ -27,10 +27,12 @@ typeof(200)
 
 # Question 2
 **a**: x < y < z will be evaluated as x < y & y < z  
-**b**: "==" is equality. "|" is or. "!=" is inequality. "&" is and. ">" is greatr than.  
+**b**: "==" is equality. "|" is or. "!=" is inequality. "&" is and. ">" is greater than.  
 **c**: From highest to lowest, ==, !==, >, &, |.  
 **d**: TRUE & 5 & FALSE & "abc" & TRUE  
-**e**: (5 == 5) | ("abc" != "abc") & (1 > 0)
+ _> not sure, I got:
+ true | false & true
+**e**: (5 == 5) | (("abc" != "abc") & (1 > 0))
 
 # Question 3
 **a**: 
